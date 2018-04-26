@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import {GridList} from 'material-ui/GridList';
 import CircularProgress from 'material-ui/CircularProgress';
 import {getAllSets, updateSetOnDisplay} from "../repository/Repo";
@@ -10,80 +10,13 @@ import Toggle from 'material-ui/Toggle';
 import {sleep} from '../Util';
 import GridListItem from "./GridListItem";
 
-const imgSrcSmallPattern = 'https://images.brickset.com/sets/small/_setnum_.jpg';
-const imgSrcLargePattern = 'https://images.brickset.com/sets/large/_setnum_.jpg';
-
-const setFilters = {
-    'all': function(set) { return true; },
-    'display': function(set) { return set.onDisplay; },
-    'storage': function(set) { return !set.onDisplay; }
-};
-
-export class SetList extends Component {
+class LegoGridList extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            sets: [],
-            setsLastFetched: 0,
-            setDialogOpen: false,
-            selectedSet: null,
-            fetchCompleted: false
-        };
-
-        this.handleUpdateOnDisplay = this.handleUpdateOnDisplay.bind(this);
-        this.onReceivedAllSets = this.onReceivedAllSets.bind(this);
-    }
-
-    onReceivedAllSets(response) {
-        const setList = Object.values(response.data.data);
-        this.setState({
-            sets: setList,
-            setsLastFetched: new Date(),
-            fetchCompleted: true
-        });
-    }
-
-    componentDidMount() {
-        getAllSets()
-            .then(this.onReceivedAllSets)
-            .catch(error => console.log(error));
-    }
-
-    generateSetListItem(set) {
-        return (
-            <GridListItem name={set.name}
-                          num={set.num}
-                          key={set.num}
-                          imgUrl={imgSrcSmallPattern.replace('_setnum_', set.num)}
-                          onClick={(evt) => this.handleSetListOpen(set)} />
-        );
-    }
-
-    handleSetListOpen(set) {
-        console.log(set);
-        this.setState({
-            setDialogOpen: true,
-            selectedSet: set
-        });
-    }
-
-    handleSetListClose = () => {
-        this.setState({
-            setDialogOpen: false,
-            selectedSet: null
-        });
-    };
-
-    handleUpdateOnDisplay(newOnDisplayValue) {
-        this.setState((oldState, props) => {
-            oldState.selectedSet.onDisplay = newOnDisplayValue;
-            return oldState
-        });
     }
 
     render() {
-        const {sets, setDialogOpen, selectedSet, fetchCompleted} = this.state;
+        const {items, dialogOpen, selectedItem, fetchCompleted} = this.state;
 
         if (!fetchCompleted) {
             return (
@@ -93,42 +26,105 @@ export class SetList extends Component {
             );
         }
 
-        const filteredSets = sets.filter(setFilters[this.props.filter]);
-        if (filteredSets.length > 0) {
+        const filteredItems = sets.filter(this.props.filter);
+        if (filteredItems.length > 0) {
             return (
                 <div>
                     <GridList cellHeight={220}
                               cols={3}>
-                        {filteredSets.map(set => this.generateSetListItem(set))}
+                        {filteredItems.map(item => this.props.generateCard(item))}
                     </GridList>
-                    <SetListDetail set={selectedSet}
-                                   isOpen={setDialogOpen}
-                                   handleClose={this.handleSetListClose}
-                                   updateOnDisplay={this.handleUpdateOnDisplay}
-                    />
+                    {this.props.generateDetailCard(selectedItem, dialogOpen, this.handleListClose, thisHandleUpdateOnDisplay)}
+                    <ItemDetail item={selectedItem}
+                                isOpen={dialogOpen}
+                                handleClose={this.handleListClose}
+                                updateOnDisplay={this.handleUpdateOnDisplay} />
                 </div>
             );
         } else {
             return (
                 <div style={{width: '100%', textAlign: 'center', paddingTop: '100px'}}>
-                    {"No sets fit the " + this.props.filter +  " filter"}
+                    {"No " + this.props.type + " fit the " + this.props.filter +  " filter"}
                 </div>
             )
         }
     }
 }
 
-class SetListDetail extends Component {
+class LegoItemDetailDialog extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             toggleDisabled: false,
-            onDisplay: this.props.set ? this.props.set.onDisplay : false
+            onDisplay: this.props.item ? this.props.item.onDisplay : false
         };
 
         this.onToggleChange = this.onToggleChange.bind(this);
     }
+
+    onToggleChange(evt, isInputChecked) {
+        const oldVal = this.props.onDisplay;
+        this.setState({
+            toggleDisabled: true,
+        });
+
+        this.props.updateOperation(this.props.item, isInputChecked);
+    }
+
+    render() {
+        const {item, itemName, itemNum, handleClose, imgSrc, isOpen} = this.props;
+
+        if (item == null) {
+            return "";
+        }
+
+        return (
+            <Dialog title={name}
+                    actions={[<FlatButton label="Close" primary={true} onClick={handleClose} />]}
+                    modal={false}
+                    open={isOpen}
+                    onRequestClose={handleClose}
+                    autoDetectWindowHeight={false}
+                    autoScrollBodyContent={true}
+            >
+                <Card>
+                    <CardMedia>
+                        <div style={{height:400, textAlign:'center'}}>
+                            <img src={imgSrc}
+                                 alt={"Image for " + itemNum}
+                                 style={{height:400}}
+                            />
+                        </div>
+                    </CardMedia>
+                    <CardTitle title={itemName} subtitle={itemNum} />
+                    <CardText>
+                        {set.numParts + " Parts"}
+                    </CardText>
+                    <CardText>
+                        <TextField name="owned"
+                                   floatingLabelText={"Quantity Owned"}
+                                   floatingLabelFixed={true}
+                                   value={set.quantityOwned}
+                        />
+                    </CardText>
+                    <CardText>
+                        <Toggle toggled={set.onDisplay}
+                                label={"On Display"}
+                                style={{width: 250}}
+                                disabled={this.state.toggleDisabled}
+                                onToggle={this.onToggleChange}
+                        />
+                    </CardText>
+                </Card>
+            </Dialog>
+        );
+    }
+
+
+}
+
+class SetListDetail extends Component {
 
     onToggleChange(evt, isInputChecked) {
         const oldVal = this.props.set.onDisplay;
@@ -201,3 +197,5 @@ class SetListDetail extends Component {
         );
     }
 }
+
+export default LegoGridList;

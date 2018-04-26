@@ -1,47 +1,42 @@
 import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {List, ListItem} from 'material-ui/List';
-import ViewQuilt from 'material-ui/svg-icons/action/view-quilt';
-import ViewAgenda from 'material-ui/svg-icons/action/view-agenda';
-import {white} from 'material-ui/styles/colors';
 import {SetList} from "./components/Sets";
+import {PartList} from "./components/Parts";
+import Menu from "./components/Menu";
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedSection: null
+            selectedSection: null,
+            setFilter: 'all'
         };
 
-        this.setSelectedSection = this.setSelectedSection.bind(this);
+        this.setSetFilterSelection = this.setSetFilterSelection.bind(this);
+        this.setPartFilterSelection = this.setPartFilterSelection.bind(this);
     }
 
-    setSelectedSection(newSection) {
-        return this.setState({selectedSection: newSection})
+    setSetFilterSelection(setFilterSelection) {
+        this.setState({
+            selectedSection: 'sets',
+            setFilter: setFilterSelection
+        });
+    }
+
+    setPartFilterSelection(partFilterSelection) {
+        this.setState({
+            selectedSection: 'parts',
+            partFilter: partFilterSelection
+        });
     }
 
     renderSetSection() {
-        return <SetList />
+        return <SetList filter={this.state.setFilter}/>
     }
 
     renderPartSection() {
-        return <div>Part stuff here</div>
-    }
-
-    renderMenu() {
-        return (
-            <List>
-                <ListItem primaryText="Sets"
-                          leftIcon={<ViewQuilt color={white}/>}
-                          onClick={(evt) => this.setSelectedSection('sets')}
-                />
-                <ListItem primaryText="Parts"
-                          leftIcon={<ViewAgenda color={white}/>}
-                          onClick={(evt) => this.setSelectedSection('parts')}
-                />
-            </List>
-        );
+        return <PartList filter={this.state.partFilter} />
     }
 
     renderSectionByState(selectedSection) {
@@ -57,21 +52,22 @@ class App extends Component {
 
     render() {
         const detail = this.renderSectionByState(this.state.selectedSection);
-        const list = this.renderMenu();
 
         return (
             <MuiThemeProvider>
                 <div id="container">
                     <div className="header">
                         <div className="App-header">
-                            <img src="./cooltext283823557300489.png" />
+                            <img src="./cooltext283823557300489.png" alt="logo" />
                             <div className="App-intro">
                                 Manage your LEGO sets here
                             </div>
                         </div>
                     </div>
                     <div className="menuContainer">
-                        {list}
+                        <Menu onSetFilterSelection={this.setSetFilterSelection}
+                              onPartFilterSelection={this.setPartFilterSelection}
+                        />
                     </div>
                     <div className="detailContainer">
                         {detail}

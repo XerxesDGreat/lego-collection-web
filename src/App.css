@@ -33,19 +33,31 @@
 }
 
 .header {
-    position:absolute;
+    position:fixed;
     left:0; right:0;
     height: 150px;
     text-align: center;
+    z-index: 99;
 }
+
 .menuContainer {
-    position:absolute;
-    left:0; top:190px; bottom: 0;
-    width: 178px;
+    position:fixed;
+    left: 0;
+    top: 190px;
+    bottom: 0;
+    width: 230px;
     background-color: cornflowerblue;
+    height: 100%;
 }
+
 .detailContainer {
     position: absolute;
-    left:178px; top:190px; right:0; bottom:0;
-    width: 100%;
+    left: 230px;
+    top: 190px;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 230px);
+    width: -moz-calc(100% - 230px);
+    width: -webkit-calc(100% - 230px);
+    z-index: 1;
 }
