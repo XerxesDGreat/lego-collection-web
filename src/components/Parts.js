@@ -14,6 +14,7 @@ const partFilters = {
     'storage': function(part) { return part.storage > 0; }
 };
 
+// @todo for infinite scrolling, check out https://github.com/seatgeek/react-infinite
 export class PartList extends Component {
     constructor(props) {
         super(props);
