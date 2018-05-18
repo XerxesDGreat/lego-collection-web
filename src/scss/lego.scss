@@ -1,0 +1,27 @@
+
+// Bootstrap 4 breakpoints
+$grid-breakpoints: (
+        sm: 0px,
+        md: 500px,
+        lg: 10000px,
+        xl: 1500px
+) !default;
+
+$cards-per-line: (
+        sm: 1,
+        md: 2,
+        lg: 3,
+        xl: 4
+);
+
+.card-deck {
+  display: grid;
+}
+
+@each $name, $breakpoint in $grid-breakpoints {
+  @media (min-width: $breakpoint) {
+    .card-deck {
+      grid-template-columns: repeat(map-get($cards-per-line, $name), 1fr);
+    }
+  }
+}

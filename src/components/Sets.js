@@ -7,7 +7,6 @@ import FlatButton from 'material-ui/FlatButton';
 import {Card, CardMedia, CardText, CardTitle} from 'material-ui/Card';
 import TextField from 'material-ui/TextField';
 import Toggle from 'material-ui/Toggle';
-import {sleep} from '../Util';
 import GridListItem from "./GridListItem";
 
 const imgSrcSmallPattern = 'https://images.brickset.com/sets/small/_setnum_.jpg';
