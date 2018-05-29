@@ -14,14 +14,15 @@ $cards-per-line: (
         xl: 4
 );
 
-.card-deck {
+.card-deck-4 {
   display: grid;
 }
 
 @each $name, $breakpoint in $grid-breakpoints {
   @media (min-width: $breakpoint) {
-    .card-deck {
+    .card-deck-4 {
       grid-template-columns: repeat(map-get($cards-per-line, $name), 1fr);
     }
   }
 }
+
