@@ -1,18 +1,18 @@
-.card-deck {
+.card-deck-4 {
   display: grid; }
 
 @media (min-width: 0px) {
-  .card-deck {
+  .card-deck-4 {
     grid-template-columns: repeat(1, 1fr); } }
 
 @media (min-width: 500px) {
-  .card-deck {
+  .card-deck-4 {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media (min-width: 10000px) {
-  .card-deck {
+  .card-deck-4 {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media (min-width: 1500px) {
-  .card-deck {
+  .card-deck-4 {
     grid-template-columns: repeat(4, 1fr); } }
