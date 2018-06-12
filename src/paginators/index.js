@@ -1,12 +1,6 @@
-import {createPaginator} from 'redux-paginator';
-import {getApiUrl} from "../config";
+import getPaginator from 'paging-dr-redux';
+import {getParts} from "../api/partApi";
 
-export const partsPaginator = createPaginator(
-    getApiUrl() + '/parts',
-    ['parts'],
-    {
-        pageArgName: 'page',
-        resultsKey: 'results',
-        countKey: 'count'
-    }
-);
+export const partsPaginator = getPaginator(getParts, {
+    entityIdKey: 'part_num'
+});

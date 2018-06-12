@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
-const imgUrlTemplate = "http://localhost:8888/static/img/unknown-1/__part_num__.png";
+const imgUrlTemplate = "http://localhost:8000/static/img/unknown-1/__part_num__.png";
 //const imgUrlTemplate = "http://img.lugnet.com/ld/__part_num__.gif";
 //const imgUrlTemplate = "https://m.rebrickable.com/media/parts/ldraw/2/__part_num__.png";
 
 
-function getUrlForPart(part) {
-    return !part['thumbnail'] ? imgUrlTemplate.replace('__part_num__', part.part_num) : part['thumbnail'];
+function getImageUrlForPart(part) {
+    return !part['thumbnail_url'] ? imgUrlTemplate.replace('__part_num__', part.part_num) : part['thumbnail_url'];
 }
 
 function getCardForPart(part, onPartClick) {
@@ -27,7 +27,7 @@ function getCardForPart(part, onPartClick) {
         >
             <div className={imgClass} style={{display: "inline-block", align: "center"}}>
                 <img className="card-img-top align-middle"
-                     src={getUrlForPart(part)}
+                     src={getImageUrlForPart(part)}
                      alt={'Image for ' + part.part_num}
                      style={{maxHeight: 100, objectFit: "contain"}}
                 />
@@ -46,20 +46,27 @@ function getCardForPart(part, onPartClick) {
 
 const PartList = props => {
     const {parts, onPartCardClick} = props;
-    return (
-        <div>
-            {parts.map(part => getCardForPart(part, onPartCardClick))}
-        </div>
-    );
+    return parts.length > 0 ?
+        (
+            <div>
+                {parts.map(part => getCardForPart(part, onPartCardClick))}
+            </div>
+        ) : (
+            <div>
+                nothing
+            </div>
+        );
 };
 
 PartList.propTypes = {
     // can expand this for the shape
     parts: PropTypes.arrayOf(
         PropTypes.shape({
-            part_num: PropTypes.string.isRequired
+            part_num: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            thumbnail_url: PropTypes.string.isRequired
         }).isRequired
-    ).isRequired,
+    ).isRequired//,
     //onPartCardClick: PropTypes.func.isRequired
 };
 

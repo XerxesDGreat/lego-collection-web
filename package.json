@@ -10,12 +10,13 @@
         "cheerio": "^1.0.0-rc.2",
         "colors": "^1.2.5",
         "compression": "^1.7.2",
+        "deep-copy": "^1.4.2",
         "express": "^4.16.3",
         "flux-standard-action": "^2.0.3",
         "material-ui": "^0.20.0",
         "node-sass-chokidar": "^1.3.0",
         "npm": "^6.1.0",
-        "paging-dr-redux": "github:XerxesDGreat/paging-dr-redux#master",
+        "paging-dr-redux": "^0.1.4",
         "prop-types": "^15.6.1",
         "query-string": "^6.1.0",
         "react": "^16.3.2",
@@ -28,8 +29,7 @@
         "redux": "^4.0.0",
         "redux-logger": "^3.0.6",
         "redux-thunk": "^2.2.0",
-        "serve-favicon": "^2.5.0",
-        "violet-paginator": "^3.0.0-beta-6"
+        "serve-favicon": "^2.5.0"
     },
     "scripts": {
         "build-css": "node-sass-chokidar src/ -o src/",
@@ -39,5 +39,7 @@
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "babel-preset-env": "^1.7.0"
+    }
 }

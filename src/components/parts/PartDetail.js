@@ -10,7 +10,7 @@ const PartDetail = props => (
                 <Col mdOffset={2} md={8}>
                     <Media>
                         <Media.Left>
-                            <img src={props.part.thumbnail}
+                            <img src={props.part.thumbnail_url}
                                  alt={"Image for " + props.part.partNum} />
                         </Media.Left>
                         <Media.Body>
@@ -25,10 +25,10 @@ const PartDetail = props => (
 
 PartDetail.propTypes = {
     part: PropTypes.shape({
-        partNum: PropTypes.string.isRequired,
+        part_num: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
-        categoryId: PropTypes.number.isRequired,
-        thumbnail: PropTypes.string.isRequired
+        category: PropTypes.number.isRequired,
+        thumbnail_url: PropTypes.string.isRequired
     })
 };
 

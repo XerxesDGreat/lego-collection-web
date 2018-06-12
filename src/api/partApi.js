@@ -9,22 +9,6 @@ export const getPartCategories = () => {
     });
 };
 
-export const getPartsForCategory = (id) => {
-    return fetch(getApiUrl() + '/parts?categoryId=' + id)
-        .then(
-            response => response.json(),
-            error => error
-        );
-};
-
-export const getPartForId = (id) => {
-    return fetch(getApiUrl() + '/parts/' + id)
-        .then(
-            response => response.json(),
-            error => error
-        );
-};
-
 export const getParts = (filters) => {
     const stringifiedQuery = queryString.stringify(filters);
     const url = getApiUrl() + '/parts?' + stringifiedQuery;

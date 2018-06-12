@@ -1,17 +1,21 @@
 import {combineReducers} from 'redux';
 import models from './modelReducer';
 import partCategories from './partCategoryReducer';
-import parts from './partReducer';
-import currentPart from './currentPartReducer';
+import loggedInUser from '../modules/users';
 import {partsPaginator} from "../paginators";
+import currentPart from '../modules/currentPart';
+
+const parts = combineReducers({
+    entities: partsPaginator.entitiesReducer,
+    pagination: partsPaginator.paginationReducer,
+    currentPart
+});
 
 const rootReducer = combineReducers({
     models,
     partCategories,
     parts,
-    currentPart,
-    entities: {},
-    pagination: partsPaginator.reducers
+    loggedInUser
 });
 
 export default rootReducer;
