@@ -4,6 +4,7 @@ import partCategories from './partCategoryReducer';
 import loggedInUser from '../modules/users';
 import {partsPaginator} from "../paginators";
 import currentPart from '../modules/currentPart';
+import elements from '../modules/elements';
 
 const parts = combineReducers({
     entities: partsPaginator.entitiesReducer,
@@ -15,7 +16,8 @@ const rootReducer = combineReducers({
     models,
     partCategories,
     parts,
-    loggedInUser
+    loggedInUser,
+    elements
 });
 
 export default rootReducer;
