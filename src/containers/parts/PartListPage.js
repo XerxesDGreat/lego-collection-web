@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {fetchPartCategoriesIfNeeded} from '../../actions/partCategoryActions';
-import {partsPaginator} from '../../paginators';
+import {partsPaginator} from '../../modules/parts';
 import PartList from '../../components/parts/PartList';
 import PartFilterForm from '../../components/parts/PartFilterForm';
 

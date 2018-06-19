@@ -1,10 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {routes} from '../../config';
 
-const getUserLink = loggedInUser=> {
-    return (loggedInUser) ?
-        <Link to="/users/dashboard">{loggedInUser.username + "'s"} Dashboard</Link> :
-        <Link to="/users/login">Login</Link>;
+const getUserLink = loggedInUser => {
+    return loggedInUser !== undefined ?
+        <Link to={routes.myDashboard}>{loggedInUser.username + "'s"} Dashboard</Link> :
+        <Link to={routes.login}>Login</Link>;
 };
 
 const Header = props => (
@@ -15,11 +16,11 @@ const Header = props => (
                 Manage your LEGO sets here
             </div>
             <nav>
-                <Link to="/">Home</Link>
+                <Link to={routes.home}>Home</Link>
                 {" | "}
-                <Link to="/models">Models</Link>
+                <Link to={routes.modelList}>Models</Link>
                 {" | "}
-                <Link to="/parts">Part Browser</Link>
+                <Link to={routes.partList}>Part Browser</Link>
                 {" | "}
                 {getUserLink(props.loggedInUser)}
             </nav>

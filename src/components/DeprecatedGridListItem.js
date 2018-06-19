@@ -4,7 +4,7 @@ import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import {GridTile} from 'material-ui/GridList';
 
 
-class GridListItem extends Component {
+class DeprecatedGridListItem extends Component {
     constructor(props) {
         super(props);
         this.img = <img src={this.props.imgUrl}
@@ -31,4 +31,4 @@ class GridListItem extends Component {
     }
 }
 
-export default GridListItem;
+export default DeprecatedGridListItem;

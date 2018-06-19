@@ -1,20 +1,9 @@
 import {getApiUrl} from '../config';
-import queryString from 'query-string';
+import {handleErrors} from "./helpers";
 
 export const getPartCategories = () => {
-    return fetch(getApiUrl() + '/part-categories').then(response => {
-        return response.json();
-    }).catch(error => {
-        return error;
-    });
-};
-
-export const getParts = (filters) => {
-    const stringifiedQuery = queryString.stringify(filters);
-    const url = getApiUrl() + '/parts?' + stringifiedQuery;
-    return fetch(url)
-        .then(
-            response => response.json(),
-            error => error
-        );
+    return fetch(getApiUrl() + '/part-categories')
+        .then(handleErrors)
+        .then(response => response.json())
+        .catch(error => console.log(error));
 };
