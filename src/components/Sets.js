@@ -7,7 +7,7 @@ import FlatButton from 'material-ui/FlatButton';
 import {Card, CardMedia, CardText, CardTitle} from 'material-ui/Card';
 import TextField from 'material-ui/TextField';
 import Toggle from 'material-ui/Toggle';
-import GridListItem from "./GridListItem";
+import DeprecatedGridListItem from "./DeprecatedGridListItem";
 
 const imgSrcSmallPattern = 'https://images.brickset.com/sets/small/_setnum_.jpg';
 const imgSrcLargePattern = 'https://images.brickset.com/sets/large/_setnum_.jpg';
@@ -51,11 +51,11 @@ export class SetList extends Component {
 
     generateSetListItem(set) {
         return (
-            <GridListItem name={set.name}
-                          num={set.num}
-                          key={set.num}
-                          imgUrl={imgSrcSmallPattern.replace('_setnum_', set.num)}
-                          onClick={(evt) => this.handleSetListOpen(set)} />
+            <DeprecatedGridListItem name={set.name}
+                                    num={set.num}
+                                    key={set.num}
+                                    imgUrl={imgSrcSmallPattern.replace('_setnum_', set.num)}
+                                    onClick={(evt) => this.handleSetListOpen(set)} />
         );
     }
 

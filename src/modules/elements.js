@@ -1,5 +1,6 @@
 import {getApiUrl} from "../config";
 import {combineReducers} from 'redux';
+import {handleErrors} from "../api/helpers";
 
 // actions
 const REQUEST = 'lego/elements-for-part/REQUEST';
@@ -81,16 +82,13 @@ export const getElementsForPart = (state, partNum) => {
 };
 
 // side effects
-export const fetchElementsForPart = (partNum) => {
-    return (dispatch) => {
+export const fetchElementsForPart = partNum => {
+    return dispatch => {
         dispatch(requestElementsForPart(partNum));
         return fetch(getApiUrl() + '/elements?part=' + partNum)
-            .then(
-                response => response.json(),
-                error => console.log('An error occurred', error)
-            )
-            .then(
-                responseJson => dispatch(receiveElementsForPart(partNum, responseJson.results))
-            );
+            .then(handleErrors)
+            .then(response => response.json())
+            .then(responseJson => dispatch(receiveElementsForPart(partNum, responseJson.results)))
+            .catch(error => console.log('An error occurred', error));
     }
 };

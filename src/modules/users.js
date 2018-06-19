@@ -1,5 +1,6 @@
 import {addAuthTokenToRequest, loggedIn} from '../api/authApi';
 import {getApiUrl} from "../config";
+import {handleErrors} from "../api/helpers";
 
 // Actions
 export const LOAD_LOGGED_IN_USER_REQUEST = 'lego/logged-in-user/LOAD_REQUEST';
@@ -12,6 +13,7 @@ const initialState = {
     loading: false,
     user: undefined
 };
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case LOAD_LOGGED_IN_USER_SUCCESS:
@@ -52,21 +54,30 @@ const requestLoggedInUser = () =>  {
     }
 };
 
+// Selectors
+export const getLoggedInUser = state => state.loggedInUser.user;
+export const isLoadingLoggedInUser = state => state.loggedInUser.loading;
+
 // Side Effects
-export const fetchLoggedInUser = () => {
+export const fetchLoggedInUser = state => () => {
+    if (isLoadingLoggedInUser(state)) {
+        return Promise.resolve();
+    }
+
     return (dispatch) => {
         dispatch(requestLoggedInUser());
 
         if (!loggedIn()) {
             dispatch(loggedInUserFailed());
         }
-        const url = getApiUrl() + '/users/me';
+        const url = getApiUrl() + '/users/me?details=1';
         return fetch(url, addAuthTokenToRequest({}))
-            .then(
-                response => response.json(),
-                error => console.log('An error occurred', error)
-            ).then(
-                responseJson => dispatch(receiveLoggedInUser(responseJson)),
-            )
+            .then(handleErrors)
+            .then(response => response.json())
+            .then(response => dispatch(receiveLoggedInUser(response)))
+            .catch(error => {
+                console.log('An error occurred', error);
+                dispatch(loggedInUserFailed());
+            });
     };
 };

@@ -1,5 +1,6 @@
 import {getApiUrl} from '../config';
 import deepCopy from 'deep-copy';
+import {handleErrors} from "./helpers";
 
 const getAuthenticatedTokenCallbackObject = token => ({
     authenticated: true,
@@ -8,7 +9,7 @@ const getAuthenticatedTokenCallbackObject = token => ({
 
 // getToken retrieves an existent token from local storage; this _basically_ assumes
 // the user is already logged in
-export const getToken = () => {
+const getStoredToken = () => {
     return localStorage.authToken;
 };
 
@@ -18,7 +19,7 @@ export const addAuthTokenToRequest = request => {
         if (newRequest.headers === undefined) {
             newRequest.headers = {};
         }
-        newRequest.headers['Authorization'] = 'Token ' + getToken();
+        newRequest.headers['Authorization'] = 'Token ' + getStoredToken();
     }
     return newRequest;
 };
@@ -26,7 +27,7 @@ export const addAuthTokenToRequest = request => {
 // fetchToken potentially makes a server round trip to retrieve a token
 const fetchToken = (username, password, callback) => {
     if (loggedIn()) {
-        callback(getAuthenticatedTokenCallbackObject(getToken()));
+        callback(getAuthenticatedTokenCallbackObject(getStoredToken()));
         return;
     }
 
@@ -41,17 +42,10 @@ const fetchToken = (username, password, callback) => {
             username: username,
             password: password
         })
-    }).then(
-        response => {
-            if (response.status >= 400 && response.status < 600) {
-                throw new Error("Error received from server: [" + response.statusText + "]");
-            }
-            return response.json();
-        }
-    ).then(
-        responseJson => callback(getAuthenticatedTokenCallbackObject(responseJson.token)),
-        error => console.log(error)
-    );
+    }).then(response => handleErrors(response))
+        .then(response => response.json())
+        .then(responseJson => callback(getAuthenticatedTokenCallbackObject(responseJson.token)))
+        .catch(error => console.log(error));
 };
 
 export const login = (username, password, callback) => {
@@ -78,5 +72,6 @@ export const logout = () => {
 };
 
 export const loggedIn = () => {
-    return !! getToken();
+    const token = getStoredToken();
+    return token !== undefined && !! token;
 };

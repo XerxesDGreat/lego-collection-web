@@ -7,14 +7,18 @@ import PartsPage from "../parts/PartListPage";
 import UserLoginPage from "../users/UserLoginPage";
 import ModelPage from "../../components/models/ModelPage";
 import PartDetailPage from "../parts/PartDetailPage";
+import UserPartListPage from '../users/UserPartListPage';
 import AuthRequiredRoute from "./AuthRequiredRoute";
 import Header from '../../components/common/Header';
 import {connect} from "react-redux";
 import {fetchLoggedInUser} from '../../modules/users';
+import Home from "../../components/common/Home";
+import {routes} from '../../config';
 
 class AppContainer extends React.Component {
     componentDidMount() {
-        this.props.dispatch(fetchLoggedInUser());
+        const {fetchLoggedInUser, dispatch} = this.props;
+        dispatch(fetchLoggedInUser());
     }
 
     render() {
@@ -25,14 +29,15 @@ class AppContainer extends React.Component {
                     <div className='detailContainer'>
                         <div className='container'>
                             <Switch>
-                                <Route path='/models/:id' component={ModelPage}/>
-                                <Route path='/models' component={ModelsPage}/>
-                                <Route path='/part-categories' component={PartCategoriesPage}/>
-                                <Route path='/parts/:id' component={PartDetailPage} />
-                                <Route path='/parts' component={PartsPage} />
-                                <Route path='/users/login' component={UserLoginPage} />
-                                <AuthRequiredRoute path='/users/dashboard' component={UserDashboardPage} />
-                                <Route path='/' component={AppContainer}/>
+                                <Route path={routes.modelDetail} component={ModelPage}/>
+                                <Route path={routes.modelList} component={ModelsPage}/>
+                                <Route path={routes.partCategoryList} component={PartCategoriesPage}/>
+                                <Route path={routes.partDetail} component={PartDetailPage} />
+                                <Route path={routes.partList} component={PartsPage} />
+                                <Route path={routes.login} component={UserLoginPage} />
+                                <AuthRequiredRoute path={routes.myDashboard} component={UserDashboardPage} />
+                                <AuthRequiredRoute path={routes.myPartList} component={UserPartListPage} />
+                                <Route path={routes.home} component={Home}/>
                             </Switch>
                         </div>
                     </div>
@@ -45,7 +50,8 @@ class AppContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        user: state.loggedInUser.user
+        user: state.loggedInUser.user,
+        fetchLoggedInUser: fetchLoggedInUser(state)
     };
 };
 
