@@ -27,3 +27,6 @@ const reducer = combineReducers({
     pagination: userPartsPaginator.paginationReducer,
 });
 export default reducer;
+
+// selectors
+export const moduleSelector = state => state.userParts;

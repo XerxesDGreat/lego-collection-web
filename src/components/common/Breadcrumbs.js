@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 class Breadcrumbs extends React.Component {
     render() {
-        console.log(this.props.menuItems);
         return (
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
