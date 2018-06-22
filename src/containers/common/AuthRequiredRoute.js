@@ -2,13 +2,16 @@ import * as auth from "../../api/authApi";
 import {Route, Redirect} from 'react-router-dom';
 import React from 'react';
 
-const AuthRequiredRoute = ({component: Component, ...rest}) => (
+const AuthRequiredRoute = ({component: Component, componentProps, ...rest}) => (
     <Route
         {...rest}
         render={props => {
             if (auth.loggedIn()) {
-                console.log('logged in');
-                return <Component {...props} />
+                const propsToPass = {
+                    ...props,
+                    ...componentProps
+                };
+                return <Component {...propsToPass} />
             } else {
                 console.log('not logged in; redirecting');
                 const redirectProps = {

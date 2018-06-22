@@ -77,4 +77,5 @@ const parts = combineReducers({
 export default parts;
 
 // selectors
-export const partForPartNum = state => partNum => state.parts.entities[partNum];
+export const moduleSelector = state => state.parts;
+export const partForPartNum = state => partNum => moduleSelector(state).entities[partNum];

@@ -8,3 +8,31 @@ export const countOfDivsContainingString = (divCollection, str) => {
     });
     return divCount;
 };
+
+const lifecycleMethods = [
+    'render',
+    'componentWillMount',
+    'componentDidMount',
+    'componentWillReceiveProps',
+    'shouldComponentUpdate',
+    'componentWillUpdate',
+    'componentDidUpdate',
+    'componentWillUnmount'
+];
+
+export const stubComponent = componentClass => {
+    const originalPropTypes = componentClass.propTypes;
+
+    beforeEach(() => {
+        lifecycleMethods.forEach(method => {
+            if(componentClass.prototype[method] !== undefined) {
+                spyOn(componentClass.prototype, method).and.returnValue(null);
+            }
+        });
+        componentClass.propTypes = {};
+    });
+
+    afterEach(() => {
+        componentClass.propTypes = originalPropTypes;
+    });
+};

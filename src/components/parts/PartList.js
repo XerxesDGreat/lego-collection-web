@@ -24,7 +24,10 @@ PartList.propTypes = {
         PropTypes.shape({
             part_num: PropTypes.string.isRequired,
             name: PropTypes.string.isRequired,
-            thumbnail_url: PropTypes.string.isRequired
+            thumbnail_url: PropTypes.string.isRequired,
+            storage: PropTypes.number,
+            display: PropTypes.number,
+            color_count: PropTypes.number
         }).isRequired
     ).isRequired//,
     //onPartCardClick: PropTypes.func.isRequired

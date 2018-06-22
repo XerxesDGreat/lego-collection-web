@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {fetchPartCategoriesIfNeeded} from '../../actions/partCategoryActions';
-import {partsPaginator} from '../../modules/parts';
+import PropTypes from 'prop-types';
 import PartList from '../../components/parts/PartList';
 import PartFilterForm from '../../components/parts/PartFilterForm';
 
-class PartListPage extends React.Component {
+export class PartListPage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -61,12 +61,22 @@ class PartListPage extends React.Component {
     }
 }
 
-const mapStateToProps = state => {
+PartListPage.propTypes = {
+    paginator: PropTypes.func.isRequired,
+    stateSelector: PropTypes.func.isRequired,
+    partCategories: PropTypes.array.isRequired,
+    parts: PropTypes.array.isRequired,
+    fetchParts: PropTypes.func.isRequired,
+    filters: PropTypes.object.isRequired
+};
+
+export const mapStateToProps = (state, ownProps) => {
+    const {paginator, stateSelector} = ownProps;
     return {
         partCategories: state.partCategories.items,
-        parts: partsPaginator.selectors.getCurrentPageItems(state.parts),
-        fetchParts: partsPaginator.navigation.fetchPage(state.parts),
-        filters: partsPaginator.selectors.getFilters(state.parts)
+        parts: paginator.selectors.getCurrentPageItems(stateSelector(state)),
+        fetchParts: paginator.navigation.fetchPage(stateSelector(state)),
+        filters: paginator.selectors.getFilters(stateSelector(state))
     };
 };
 
