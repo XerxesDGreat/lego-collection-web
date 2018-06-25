@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {fetchElementsForPart, getElementsForPart} from '../../modules/elements';
 import ElementList from '../../components/elements/ElementList';
 
-class ElementListContainer extends React.Component {
+export class ElementListContainer extends React.Component {
     componentDidMount() {
         const {dispatch, partNum} = this.props;
         dispatch(fetchElementsForPart(partNum));

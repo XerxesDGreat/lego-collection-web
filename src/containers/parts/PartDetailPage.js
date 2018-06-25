@@ -3,8 +3,9 @@ import {fetchPartById} from "../../modules/currentPart";
 import {connect} from "react-redux";
 import PartDetail from "../../components/parts/PartDetail";
 import ElementListContainer from '../elements/ElementListContainer';
+import PropTypes from 'prop-types';
 
-class PartDetailPage extends React.Component {
+export class PartDetailPage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -25,6 +26,17 @@ class PartDetailPage extends React.Component {
         );
     }
 }
+
+PartDetailPage.propTypes = {
+    match: PropTypes.shape({
+        params: PropTypes.shape({
+            id: PropTypes.string.isRequired
+        })
+    }),
+    isFetching: PropTypes.bool.isRequired,
+    part: PropTypes.object
+};
+
 
 const mapStateToProps = state => {
     // if we want to filter, this is where we can do it
