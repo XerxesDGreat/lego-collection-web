@@ -22,7 +22,7 @@ describe('Home Display Component', () => {
     });
 
     describe('common render operation', () => {
-        it('just passes because seriously there\'s nothin\' to test here', () => {
+        it("just passes because seriously there's nothin' to test here", () => {
             expect(true).toEqual(true);
         });
     });
