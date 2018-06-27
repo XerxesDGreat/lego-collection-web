@@ -36,3 +36,15 @@ export const stubComponent = componentClass => {
         componentClass.propTypes = originalPropTypes;
     });
 };
+
+export const stubPresentationComponent = componentClass => {
+    const originalPropTypes = componentClass.propTypes;
+
+    beforeEach(() => {
+        componentClass.propTypes = {};
+    });
+
+    afterEach(() => {
+        componentClass.propTypes = originalPropTypes;
+    });
+};
