@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bd9fd6-9c63-4c06-bfca-a6fca485ee1a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/parts/PartDetailPage.unit.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/elements/ElementListItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Home.unit.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Home.unit.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/parts/PartDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/elements/ElementListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/elements/ElementListContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/parts/PartDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/parts/PartDetailPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elements/ElementList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elements/ElementList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/helpers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +20,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.4561316">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PartDetail.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PartDetail.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="170">
@@ -34,18 +32,63 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="ElementList.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ElementListItem.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/elements/ElementListItem.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="468">
+                  <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="PartDetail.unit.test.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PartDetail.unit.test.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1800">
-                  <caret line="100" column="70" selection-start-line="100" selection-start-column="70" selection-end-line="100" selection-end-column="70" />
+                <state relative-caret-position="-964">
+                  <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ElementList.unit.test.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="579">
+                  <caret line="80" column="11" lean-forward="true" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#0#43#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="helpers.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/tests/helpers.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="191">
+                  <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
                 </state>
               </provider>
             </entry>
@@ -104,9 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/containers/users/UserLoginPage.js" />
-        <option value="$PROJECT_DIR$/src/api/helpers.js" />
-        <option value="$PROJECT_DIR$/src/api/authApi.js" />
         <option value="$PROJECT_DIR$/src/modules/users.js" />
         <option value="$PROJECT_DIR$/src/modules/elements.js" />
         <option value="$PROJECT_DIR$/src/containers/users/UserDashboardPage.js" />
@@ -138,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/modules/parts.js" />
         <option value="$PROJECT_DIR$/src/modules/userParts.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/tests/helpers.js" />
         <option value="$PROJECT_DIR$/src/containers/users/UserPartListPage.unit.test.js" />
         <option value="$PROJECT_DIR$/src/containers/users/UserPartListPage.js" />
         <option value="$PROJECT_DIR$/src/containers/parts/PartListContainer.js" />
@@ -155,6 +194,10 @@
         <option value="$PROJECT_DIR$/src/containers/parts/PartDetailPage.unit.test.js" />
         <option value="$PROJECT_DIR$/src/components/parts/PartDetail.js" />
         <option value="$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js" />
+        <option value="$PROJECT_DIR$/src/components/elements/ElementListItem.js" />
+        <option value="$PROJECT_DIR$/src/tests/helpers.js" />
+        <option value="$PROJECT_DIR$/src/components/elements/ElementList.js" />
+        <option value="$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js" />
       </list>
     </option>
   </component>
@@ -313,11 +356,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/elements" />
       <recent name="$PROJECT_DIR$/src/components/parts" />
       <recent name="$PROJECT_DIR$/src/containers/parts" />
       <recent name="$PROJECT_DIR$/src/components/common" />
       <recent name="$PROJECT_DIR$/src/containers/users" />
-      <recent name="$PROJECT_DIR$/src/components/users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/containers/elements" />
@@ -448,7 +491,7 @@
       <workItem from="1528591600592" duration="12870000" />
       <workItem from="1528769872384" duration="53153000" />
       <workItem from="1529291371832" duration="13886000" />
-      <workItem from="1529432720278" duration="29961000" />
+      <workItem from="1529432720278" duration="33834000" />
     </task>
     <servers />
   </component>
@@ -476,7 +519,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216027000" />
+    <option name="totallyTimeSpent" value="219900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2048" height="1217" extended-state="0" />
@@ -526,24 +569,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/users/UserDashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/common/App.test.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/paging-dr-redux/lib/index.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/2018-2019 Flex Pass Season Subscription _ Bay Area Children's Theatre.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -718,13 +743,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -964,10 +982,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="100" column="70" selection-start-line="100" selection-start-column="70" selection-end-line="100" selection-end-column="70" />
+        <state relative-caret-position="-964">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="80" column="11" lean-forward="true" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
