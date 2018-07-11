@@ -74,11 +74,18 @@ const requestElementsForPart = (partNum) => {
 // selectors
 export const getElementsForPart = (state, partNum) => {
     if (!(partNum in state.elements.elementsForPart)) {
-        return [];
+        return undefined;
     }
     return state.elements.elementsForPart[partNum].elements.map(entityId => (
         state.elements.entities[entityId]
     ));
+};
+
+export const isLoadingPart = (state, partNum) => {
+    if (!(partNum in state.elements.elementsForPart)) {
+        return false;
+    }
+    return state.elements.elementsForPart[partNum].loading;
 };
 
 // side effects

@@ -2,11 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5bd9fd6-9c63-4c06-bfca-a6fca485ee1a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/elements/ElementListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/elements/ElementListItem.unit.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/elements/ElementListContainer.unit.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/elements/ElementListItemContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/parts/PartModalContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/elements/ElementList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elements/ElementList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/elements/ElementListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/elements/ElementListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartFilterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartFilterForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parts/PartModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parts/PartQuantityForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/UserDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/UserDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/common/AppContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/common/AppContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/elements/ElementListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/elements/ElementListContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/parts/PartCardContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/parts/PartCardContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/parts/PartListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/parts/PartListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/userElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/userElements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,85 +39,122 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4561316">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PartDetail.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ElementList.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ElementListItem.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/elements/ElementListItem.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="PartDetail.unit.test.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-964">
-                  <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ElementList.unit.test.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="579">
-                  <caret line="80" column="11" lean-forward="true" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#0#43#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="helpers.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/tests/helpers.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
-                  <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PartListPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/parts/PartListPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/parts/PartList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pagination.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/common/Pagination.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="107" column="101" selection-start-line="107" selection-start-column="101" selection-end-line="107" selection-end-column="101" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartCardContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/parts/PartCardContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/parts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/paging-dr-redux/lib/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/parts/PartCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDetail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/users/UserDetail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartModalContainer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/parts/PartModalContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartFilterForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/parts/PartFilterForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,20 +165,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
-      <find>reducer</find>
-      <find>thunkMiddle</find>
-      <find>App&quot;</find>
-      <find>getPartCa</find>
-      <find>breadcru</find>
-      <find>fetchPartCategories</find>
       <find>fetchPartsForCategory</find>
       <find>fetchPartCategoriesIfNeeded</find>
       <find>loadModels</find>
       <find>selectedPart</find>
       <find>updatePartFilter</find>
       <find>updatePartFi</find>
-      <find>partNum</find>
       <find>fetchPart</find>
       <find>open</find>
       <find>PartsPage</find>
@@ -133,13 +184,26 @@
       <find>afterEach</find>
       <find>UserPartListPage</find>
       <find>PartListPage</find>
+      <find>loading</find>
+      <find>when part is undefined</find>
+      <find>PartDetail</find>
       <find>PartDetailPage</find>
+      <find>from 'react-bootstrap'</find>
+      <find>ElementListContainer</find>
+      <find>PartModalContainer</find>
+      <find>maxH</find>
+      <find>partNum</find>
+      <find>modalName</find>
+      <find>PartFilterForm</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>part_num</replace>
       <replace>'</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/components/parts</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,18 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/modules/users.js" />
-        <option value="$PROJECT_DIR$/src/modules/elements.js" />
-        <option value="$PROJECT_DIR$/src/containers/users/UserDashboardPage.js" />
-        <option value="$PROJECT_DIR$/src/containers/users/UserPartsPage.unit.test.js" />
-        <option value="$PROJECT_DIR$/src/containers/users/UserPartsPage.js" />
-        <option value="$PROJECT_DIR$/src/modules/userElements.s.js" />
-        <option value="$PROJECT_DIR$/src/modules/userElements.js" />
-        <option value="$USER_HOME$/Desktop/2018-2019 Flex Pass Season Subscription _ Bay Area Children's Theatre.htm" />
-        <option value="$PROJECT_DIR$/src/config.js" />
-        <option value="$PROJECT_DIR$/src/components/common/Header.js" />
-        <option value="$PROJECT_DIR$/src/components/users/UserPartSummary.js" />
-        <option value="$PROJECT_DIR$/src/components/users/UserPartSummary.unit.test.js" />
         <option value="$PROJECT_DIR$/src/containers/users/UserDashboardPage.unit.test.js" />
         <option value="$PROJECT_DIR$/src/components/users/UserDashboard.unit.test.js" />
         <option value="$PROJECT_DIR$/src/components/users/UserPartList.js" />
@@ -171,33 +223,45 @@
         <option value="$PROJECT_DIR$/src/paginators/index.js" />
         <option value="$PROJECT_DIR$/src/actions/partCategoryActions.js" />
         <option value="$PROJECT_DIR$/src/components/parts/PartCard.unit.test.js" />
-        <option value="$PROJECT_DIR$/src/containers/parts/PartCardContainer.js" />
         <option value="$PROJECT_DIR$/src/containers/parts/PartCardContainer.unit.test.js" />
         <option value="$PROJECT_DIR$/src/api/partApi.js" />
-        <option value="$PROJECT_DIR$/src/components/parts/PartList.js" />
         <option value="$PROJECT_DIR$/src/modules/parts.js" />
         <option value="$PROJECT_DIR$/src/modules/userParts.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/containers/users/UserPartListPage.unit.test.js" />
         <option value="$PROJECT_DIR$/src/containers/users/UserPartListPage.js" />
         <option value="$PROJECT_DIR$/src/containers/parts/PartListContainer.js" />
-        <option value="$PROJECT_DIR$/src/containers/parts/PartListPage.js" />
-        <option value="$PROJECT_DIR$/src/containers/common/AppContainer.js" />
         <option value="$PROJECT_DIR$/src/containers/common/AuthRequiredRoute.js" />
         <option value="$PROJECT_DIR$/src/components/common/Breadcrumbs.js" />
         <option value="$PROJECT_DIR$/src/components/common/Breadcrumbs.unit.test.js" />
         <option value="$PROJECT_DIR$/src/components/common/Header.unit.test.js" />
         <option value="$PROJECT_DIR$/src/components/common/Home.unit.test.js" />
-        <option value="$PROJECT_DIR$/src/components/parts/PartCard.js" />
         <option value="$PROJECT_DIR$/src/containers/parts/PartDetailPage.js" />
-        <option value="$PROJECT_DIR$/src/containers/elements/ElementListContainer.js" />
         <option value="$PROJECT_DIR$/src/containers/parts/PartDetailPage.unit.test.js" />
+        <option value="$PROJECT_DIR$/src/tests/helpers.js" />
+        <option value="$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js" />
+        <option value="$PROJECT_DIR$/src/components/elements/ElementListItem.unit.test.js" />
+        <option value="$PROJECT_DIR$/src/containers/elements/ElementListContainer.unit.test.js" />
+        <option value="$PROJECT_DIR$/src/containers/common/AppContainer.js" />
         <option value="$PROJECT_DIR$/src/components/parts/PartDetail.js" />
         <option value="$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js" />
-        <option value="$PROJECT_DIR$/src/components/elements/ElementListItem.js" />
-        <option value="$PROJECT_DIR$/src/tests/helpers.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/scss/index.css" />
+        <option value="$PROJECT_DIR$/src/containers/elements/ElementListContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/parts/PartModal.js" />
         <option value="$PROJECT_DIR$/src/components/elements/ElementList.js" />
-        <option value="$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js" />
+        <option value="$PROJECT_DIR$/src/modules/elements.js" />
+        <option value="$PROJECT_DIR$/src/components/elements/ElementListItem.js" />
+        <option value="$PROJECT_DIR$/src/containers/elements/ElementListItemContainer.js" />
+        <option value="$PROJECT_DIR$/src/modules/userElements.js" />
+        <option value="$PROJECT_DIR$/src/containers/parts/PartCardContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/parts/PartFilterForm.js" />
+        <option value="$PROJECT_DIR$/src/components/parts/PartCard.js" />
+        <option value="$PROJECT_DIR$/src/components/users/UserDetail.js" />
+        <option value="$PROJECT_DIR$/src/containers/parts/PartModalContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/parts/PartList.js" />
+        <option value="$PROJECT_DIR$/src/containers/parts/PartListPage.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Pagination.js" />
       </list>
     </option>
   </component>
@@ -224,10 +288,11 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="2048" />
-    <option name="height" value="1217" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="228" />
+    <option name="y" value="116" />
+    <option name="width" value="1643" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -337,6 +402,24 @@
               <item name="lego-collection-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="lego-collection-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lego-collection-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lego-collection-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lego-collection-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lego-collection-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lego-collection-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lego-collection-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -346,7 +429,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Header&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/components/common/Header.js&#10;webpack&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/node_modules/react-scripts/config/webpack.config.dev.js&#10;PartDetail&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/containers/parts/PartDetailPage.js&#10;Bread&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/components/common/Breadcrumbs.js" />
+    <property name="SearchEverywhereHistoryKey" value="Pagina&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/components/common/Pagination.js&#10;PartMod&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/containers/parts/PartModalContainer.js&#10;UserDe&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/components/users/UserDetail.js&#10;Header&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/components/common/Header.js&#10;webpack&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/node_modules/react-scripts/config/webpack.config.dev.js&#10;PartDetail&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/containers/parts/PartDetailPage.js&#10;Bread&#9;FILE&#9;file:///Users/josh/dev/lego-collection-web/src/components/common/Breadcrumbs.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
@@ -356,11 +439,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/containers/elements" />
       <recent name="$PROJECT_DIR$/src/components/elements" />
       <recent name="$PROJECT_DIR$/src/components/parts" />
       <recent name="$PROJECT_DIR$/src/containers/parts" />
       <recent name="$PROJECT_DIR$/src/components/common" />
-      <recent name="$PROJECT_DIR$/src/containers/users" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/containers/elements" />
@@ -491,7 +574,7 @@
       <workItem from="1528591600592" duration="12870000" />
       <workItem from="1528769872384" duration="53153000" />
       <workItem from="1529291371832" duration="13886000" />
-      <workItem from="1529432720278" duration="33834000" />
+      <workItem from="1529432720278" duration="84919000" />
     </task>
     <servers />
   </component>
@@ -519,11 +602,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219900000" />
+    <option name="totallyTimeSpent" value="270985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2048" height="1217" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="23" width="2048" height="1217" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
@@ -533,16 +615,16 @@
       <window_info anchor="bottom" id="Run" order="6" weight="0.3299909" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3099362" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.2661805" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.22033899" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.17048854" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.24975075" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3299909" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39927074" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.24975075" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
@@ -561,7 +643,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/containers/elements/ElementListContainer.js</url>
-          <line>19</line>
+          <line>34</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
@@ -569,173 +651,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/2018-2019 Flex Pass Season Subscription _ Bay Area Children's Theatre.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/paging-dr-redux/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="225" column="12" selection-start-line="225" selection-start-column="12" selection-end-line="225" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/users/UserPartSummary.unit.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/users/UserPartSummary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/userElements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/users/UserDashboardPage.unit.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/paginators/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/api/authApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="7" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/parts/LoadingPartCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartCategoriesPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/partCategoryActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/partApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/users/UserPartList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/parts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="77" selection-start-line="77" selection-end-line="80" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/userParts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-mock-store/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/common/Root.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -750,16 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/parts/PartList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -793,32 +698,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartListPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/common/AuthRequiredRoute.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/common/AppContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="33" column="87" lean-forward="true" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -866,50 +751,10 @@
     <entry file="file://$PROJECT_DIR$/src/components/common/Home.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/parts/PartCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/common/Breadcrumbs.unit.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="102" column="11" lean-forward="true" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartCardContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartDetailPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/elements/ElementListContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -970,59 +815,317 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.js">
+    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementListItem.unit.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-964">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementListItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.unit.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="80" column="11" lean-forward="true" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+        <state relative-caret-position="521">
+          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/elements/ElementListContainer.unit.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/userParts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/common/AppContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/parts/PartQuantityForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="695">
+            <caret line="789" column="3" lean-forward="true" selection-start-line="789" selection-start-column="3" selection-end-line="789" selection-end-column="3" />
+            <folding>
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#42#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#35#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.unit.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="96" column="27" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartDetailPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/parts/PartDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/elements/ElementListContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="88" selection-start-line="2" selection-start-column="88" selection-end-line="2" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/elements/ElementListItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/elements/ElementListItemContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="57" column="77" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/userElements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/parts/PartModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/elements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="100" column="2" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/parts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/parts/PartFilterForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/paging-dr-redux/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/parts/PartCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/users/UserDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartModalContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartListPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="90" column="44" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/parts/PartCardContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/parts/PartList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="107" column="101" selection-start-line="107" selection-start-column="101" selection-end-line="107" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
