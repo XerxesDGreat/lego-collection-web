@@ -39,7 +39,6 @@ body {
 }
 
 .header {
-    position:fixed;
     left:0; right:0;
     height: 190px;
     text-align: center;
@@ -47,7 +46,6 @@ body {
 }
 
 .detailContainer {
-    position: absolute;
     left: 0;
     top: 190px;
     right: 0;

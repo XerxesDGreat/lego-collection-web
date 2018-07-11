@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const UserDetail = props => {
-    const {username, id, email} = props;
+    const {username, email} = props;
     return (
         <div className="user-details">
             <div className="user-details-title">User Details</div>

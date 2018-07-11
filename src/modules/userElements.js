@@ -27,3 +27,25 @@ const reducer = combineReducers({
     pagination: userElementsPaginator.paginationReducer,
 });
 export default reducer;
+
+// Side effects
+export const updateElementQuantityInStorage = (qtyInStorage, elementId) => {
+    const url = getApiUrl() + '/me/elements';
+    const requestBody = {
+        quantity_in_storage: qtyInStorage,
+        element_id: elementId
+    };
+    let request = {
+        body: JSON.stringify(requestBody),
+        cache: 'no-cache',
+        headers: {
+            'content-type': 'application/json'
+        },
+        method: 'POST'
+    };
+    request = addAuthTokenToRequest(request);
+    return fetch(url, request)
+        .then(handleErrors)
+        .then(response => response.json())
+        .catch(error => console.log(error));
+};

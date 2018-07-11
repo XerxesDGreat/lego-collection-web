@@ -3,13 +3,19 @@ import PropTypes from 'prop-types';
 import PartCardContainer from '../../containers/parts/PartCardContainer';
 
 const PartList = props => {
-    const {parts, onPartCardClick} = props;
+    const {parts, onPartCardClick, modalName, paginationComponent} = props;
     return parts.length > 0 ?
         (
             <div>
-                {parts.map(part => <PartCardContainer part={part}
-                                                      partNum={part.part_num}
-                                                      key={part.part_num} />)}
+                {paginationComponent}
+                <div className="cardContainer clearfix">
+                    {parts.map(part => (<PartCardContainer part={part}
+                                                          partNum={part.part_num}
+                                                          key={part.part_num}
+                                                          onPartCardClick={onPartCardClick}
+                                                          modalName={modalName} />))}
+                </div>
+                {paginationComponent}
             </div>
         ) : (
             <div>
@@ -20,17 +26,10 @@ const PartList = props => {
 
 PartList.propTypes = {
     // can expand this for the shape
-    parts: PropTypes.arrayOf(
-        PropTypes.shape({
-            part_num: PropTypes.string.isRequired,
-            name: PropTypes.string.isRequired,
-            thumbnail_url: PropTypes.string.isRequired,
-            storage: PropTypes.number,
-            display: PropTypes.number,
-            color_count: PropTypes.number
-        }).isRequired
-    ).isRequired//,
-    //onPartCardClick: PropTypes.func.isRequired
+    parts: PropTypes.array.isRequired,
+    onPartCardClick: PropTypes.func.isRequired,
+    modalName: PropTypes.string.isRequired,
+    paginationComponent: PropTypes.object.isRequired
 };
 
 export default PartList;

@@ -1,24 +1,39 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {fetchElementsForPart, getElementsForPart} from '../../modules/elements';
+import PropTypes from 'prop-types';
+import {fetchElementsForPart, getElementsForPart, isLoadingPart} from '../../modules/elements';
 import ElementList from '../../components/elements/ElementList';
 
 export class ElementListContainer extends React.Component {
     componentDidMount() {
-        const {dispatch, partNum} = this.props;
-        dispatch(fetchElementsForPart(partNum));
+        const {dispatch, partNum, loading, elements} = this.props;
+        if (!loading && elements === undefined) {
+            dispatch(fetchElementsForPart(partNum));
+        }
     }
 
     render() {
-        return <ElementList {...this.props} />
+        const {elements, loading, ownedElements} = this.props;
+        return <ElementList elements={elements}
+                            loading={loading}
+                            ownedElements={ownedElements}
+        />
     }
 }
 
-const mapStateToProps = (state, ownProps) => {
-    const currentState = state.elements.elementsForPart[ownProps.partNum];
+ElementListContainer.propTypes = {
+    dispatch: PropTypes.func.isRequired,
+    partNum: PropTypes.string.isRequired,
+    loading: PropTypes.bool.isRequired,
+    elements: PropTypes.array,
+    ownedElements: PropTypes.array.isRequired
+};
+
+export const mapStateToProps = (state, ownProps) => {
+    const {partNum} = ownProps;
     return {
-        loading: currentState !== undefined ? currentState.loading : true,
-        elements: getElementsForPart(state, ownProps.partNum)
+        loading: isLoadingPart(state, partNum),
+        elements: getElementsForPart(state, partNum)
     }
 };
 

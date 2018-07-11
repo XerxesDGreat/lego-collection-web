@@ -62,9 +62,45 @@ describe('ElementList Presentation Component', () => {
             });
         });
 
-        describe('when elements are in the list', () => {
-            const element0 = {id: 1234};
-            const element1 = {id: 2345};
+        describe('when the element list is not empty', () => {
+            const element0 = {
+                id: 123,
+                part: '2304',
+                color: 15,
+                image_url: 'http://www.example.com/element0.jpg'
+            };
+            beforeEach(() => {
+                props.elements = [element0]
+            });
+
+            it('renders a single list element', () => {
+                expect(comp().find(ElementListItem).length).toEqual(1);
+            });
+
+
+            it('passes the proper elements to each entry in the list', () => {
+                const listContainer = comp().find('ul').first();
+                const listItem = listContainer.children().first();
+                expect(listItem.props().id).toEqual(element0.id);
+                expect(listItem.props().partNum).toEqual(element0.part);
+                expect(listItem.props().colorId).toEqual(element0.color);
+                expect(listItem.props().imageUrl).toEqual(element0.image_url);
+            })
+        });
+
+        describe('when more than one elements are in the list', () => {
+            const element0 = {
+                id: 123,
+                part: '2306',
+                color: 15,
+                image_url: 'http://www.example.com/element0.jpg'
+            };
+            const element1 = {
+                id: 456,
+                part: '2306',
+                color: 12,
+                image_url: 'http://www.example.com/element1.jpg'
+            };
             beforeEach(() => {
                 props.elements = [element0, element1]
             });
@@ -72,12 +108,6 @@ describe('ElementList Presentation Component', () => {
             it('renders the correct number of items', () => {
                 expect(comp().find(ElementListItem).length).toEqual(props.elements.length);
             });
-
-            it('passes the proper elements to each entry in the list', () => {
-                const listContainer = comp().find('ul').first();
-                expect(listContainer.children().at(0).props().element).toEqual(element0);
-                expect(listContainer.children().at(1).props().element).toEqual(element1);
-            })
         });
     });
 });

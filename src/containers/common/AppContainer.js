@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import ModelsPage from "../../components/models/ModelsPage";
 import UserDashboardPage from "../users/UserDashboardPage";
 import PartCategoriesPage from "../parts/PartCategoriesPage";
-import PartListContainer from "../parts/PartListPage";
+import PartListPage from "../parts/PartListPage";
 import UserLoginPage from "../users/UserLoginPage";
 import ModelPage from "../../components/models/ModelPage";
 import PartDetailPage from "../parts/PartDetailPage";
@@ -23,10 +23,11 @@ class AppContainer extends React.Component {
     }
 
     render() {
+        const {loggedInUser} = this.props;
         return (
             <BrowserRouter>
                 <div>
-                    <Header loggedInUser={this.props.user}/>
+                    <Header loggedInUser={loggedInUser}/>
                     <div className='detailContainer'>
                         <div className='container'>
                             <Switch>
@@ -35,16 +36,18 @@ class AppContainer extends React.Component {
                                 <Route path={routes.partCategoryList} component={PartCategoriesPage}/>
                                 <Route path={routes.partDetail} component={PartDetailPage} />
                                 <Route path={routes.partList}
-                                       render={props => <PartListContainer paginator={partsPaginator}
-                                                                           stateSelector={partsModuleSelector}
-                                                                           {...props} />} />
+                                       render={props => <PartListPage paginator={partsPaginator}
+                                                                      stateSelector={partsModuleSelector}
+                                                                      loggedInUser={loggedInUser}
+                                                                      {...props} />} />
                                 <Route path={routes.login} component={UserLoginPage} />
                                 <AuthRequiredRoute path={routes.myDashboard} component={UserDashboardPage} />
                                 <AuthRequiredRoute path={routes.myPartList}
-                                                   component={PartListContainer}
+                                                   component={PartListPage}
                                                    componentProps={{
                                                        paginator: userPartsPaginator,
-                                                       stateSelector: userPartsModuleSelector
+                                                       stateSelector: userPartsModuleSelector,
+                                                       loggedInUser: loggedInUser
                                                    }} />
                                 <Route path={routes.home} component={Home}/>
                             </Switch>
@@ -59,7 +62,7 @@ class AppContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        user: state.loggedInUser.user,
+        loggedInUser: state.loggedInUser.user,
         fetchLoggedInUser: fetchLoggedInUser(state)
     };
 };
