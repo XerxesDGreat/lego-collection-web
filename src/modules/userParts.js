@@ -17,7 +17,7 @@ export const getUserParts = (filters) => {
 };
 
 // Paginator
-export const userPartsPaginator = getPaginator(getUserParts, {
+export const userPartsPaginator = getPaginator('user_parts', getUserParts, {
     entityIdKey: 'part_num'
 });
 

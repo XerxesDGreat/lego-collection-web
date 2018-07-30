@@ -17,7 +17,7 @@ export const getUserElements = (filters) => {
 };
 
 // Paginator
-export const userElementsPaginator = getPaginator(getUserElements, {
+export const userElementsPaginator = getPaginator('user_elements', getUserElements, {
     entityIdKey: 'id'
 });
 

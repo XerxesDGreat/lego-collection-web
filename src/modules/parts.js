@@ -52,7 +52,7 @@ export const getSinglePart = partNum => {
     }
 };
 
-export const partsPaginator = getPaginator(getParts, {
+export const partsPaginator = getPaginator('parts', getParts, {
     entityIdKey: 'part_num'
 });
 
