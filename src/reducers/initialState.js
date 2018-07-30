@@ -13,10 +13,6 @@ export default {
         isFetching: false,
         items: []
     },
-    models: {
-        isFetching: false,
-        items: []
-    },
     parts: {
         isFetching: false,
         items: []

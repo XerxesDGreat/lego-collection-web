@@ -15,5 +15,6 @@ export const routes = {
     partCategoryList: '/part-categories',
     login: '/login',
     myDashboard: '/my/dashboard',
-    myPartList: '/my/parts'
+    myPartList: '/my/parts',
+    setList: '/sets',
 };

@@ -18,7 +18,7 @@ const setFilters = {
     'storage': function(set) { return !set.onDisplay; }
 };
 
-export class SetList extends Component {
+export class DeprecatedSetList extends Component {
     constructor(props) {
         super(props);
 
@@ -100,7 +100,7 @@ export class SetList extends Component {
                               cols={3}>
                         {filteredSets.map(set => this.generateSetListItem(set))}
                     </GridList>
-                    <SetListDetail set={selectedSet}
+                    <DeprecatedSetListDetail set={selectedSet}
                                    isOpen={setDialogOpen}
                                    handleClose={this.handleSetListClose}
                                    updateOnDisplay={this.handleUpdateOnDisplay}
@@ -117,7 +117,7 @@ export class SetList extends Component {
     }
 }
 
-class SetListDetail extends Component {
+class DeprecatedSetListDetail extends Component {
     constructor(props) {
         super(props);
 

@@ -18,7 +18,7 @@ const Header = props => (
             <nav>
                 <Link to={routes.home}>Home</Link>
                 {" | "}
-                <Link to={routes.modelList}>Models</Link>
+                <Link to={routes.setList}>Models</Link>
                 {" | "}
                 <Link to={routes.partList}>Part Browser</Link>
                 {" | "}
